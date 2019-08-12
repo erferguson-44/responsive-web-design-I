@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,14 +22,18 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
+} */
+/* HTML5 display-role reset for older browsers
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+} */
+/*UPDATED this section, margin & height***/
 body {
 	line-height: 1;
+    box-sizing: border-box;
+    margin:2%;
+    height:100vh;
 }
 ol, ul {
 	list-style: none;
@@ -47,13 +51,10 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
-* {
-	box-sizing: border-box;
-}
+/*Set every element's box-sizing to border-box */
 
 html, body {
-    height: 100%;
+    height: 100vh;
 	font-family: 'Titillium Web', sans-serif;
 }
 
@@ -66,13 +67,13 @@ h1, h2, h3, h4, h5 {
 
 
 body{
-	max-width:1024px;
-    margin:40px 100px 40px 100px;
+	/* max-width:1024px;
+    margin:40px 100px 40px 100px; */
     border:1px solid red;
 }
 main{
     /* max-width:100%; */
-    border:1px solid red;
+    /* border:1px solid red; */
 }
 
 .navbar{
@@ -84,43 +85,31 @@ main{
     justify-content: space-between;
 }
 
-.nav-container nav{
+.navbar div{
+	border:1px solid black;
+	width:100%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size:14px;
+	font-weight:bold;
+}
+
+.navbar a{
     border:1px solid red;
-    width:100%;
-    display:flex;
-	align-items:center;
-}
-.navbar nav{
-    /* border:1px solid red;
-    display:flex;
-    align-items:center; */
-}
-nav a {
-    /* border:1px solid red;
-    margin:
-	color:gray;
-	text-decoration: none;
-	color:rgba(128,128,128,.5); */
-}
-nav a {
-    border:1px solid red;
-    /* margin:0 40px 0 0; */
-	color:gray;
 	text-decoration: none;
 	color:rgba(128,128,128,.5);
-}
-.nav-container img{
-    /* margin-left:40px; */
-    border:1px solid red;
 }
 
 /****MEDIA @ 800px****/
 @media (max-width: 800px){
-    .nav-container{
+    .navbar{
     /* background-color:red; */
-    flex-direction:column-reverse;
-    align-items:center;
-    }
+    /*  */
+	/* align-items:center; */
+	flex-wrap:wrap-reverse;
+	}
+	
     .nav-container img{
         margin-left:40px;
         max-width:35%;
@@ -129,7 +118,7 @@ nav a {
         display:none;
     }
 }
-
+/****MEDIA @ 500px****/
 @media (max-width: 500px){
     .nav-container{
         align-items:center;
