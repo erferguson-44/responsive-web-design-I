@@ -74,8 +74,9 @@ main{
     /* max-width:100%; */
     border:1px solid red;
 }
-.nav-container{
-    border:1px solid red;
+
+.navbar{
+    border:1px solid purple;
     background:gold;
     width:100%;
 	margin-bottom:75px;
@@ -88,6 +89,18 @@ main{
     width:100%;
     display:flex;
 	align-items:center;
+}
+.navbar nav{
+    /* border:1px solid red;
+    display:flex;
+    align-items:center; */
+}
+nav a {
+    /* border:1px solid red;
+    margin:
+	color:gray;
+	text-decoration: none;
+	color:rgba(128,128,128,.5); */
 }
 nav a {
     border:1px solid red;
