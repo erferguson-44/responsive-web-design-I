@@ -96,7 +96,7 @@ main{
 }
 
 .navbar a{
-    border:1px solid red;
+    /* border:1px solid red; */
 	text-decoration: none;
 	color:rgba(128,128,128,.5);
 }
@@ -117,13 +117,34 @@ main{
 }
 /****MEDIA @ 500px****/
 @media (max-width: 500px){
-    .nav-container{
-        align-items:center;
-    }
-    .nav-container nav{
-        flex-direction:column;
-        border-bottom:1px solid gray;
-    }
+    body{
+		background-color:pink;
+	}
+	.navbar{
+		/* border:1px solid purple;
+		background:gold;
+		width:100%;
+		margin-bottom:75px;
+		display:flex;
+		justify-content: space-between; */
+	}
+	.navbar div{
+	/* border:1px solid black;
+	width:100%;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size:14px;
+	font-weight:bold; */
+	flex-direction:column;
+	}
+	.navbar div a{
+		width:90%;
+		padding:20px;
+		border:1px solid gray;
+		text-align:center;
+		font-size:18px;
+	}
 }
 
 /****ACTION CONTAINER****/
