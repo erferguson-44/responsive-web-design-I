@@ -5,21 +5,23 @@
     max-width:100%;
     border:1px solid red;
 }
-.nav-container{
+.navbar{
     border:1px solid purple;
+    background:gold;
     width:100%;
 	margin-bottom:75px;
-	display:flex;
+    display:flex;
+    justify-content: space-between;
 }
-.nav-container nav{
+.navbar nav{
     border:1px solid red;
     display:flex;
-	align-items:center;
+    align-items:center;
 }
 nav a {
-    border:1px solid red;
+    /* border:1px solid red;
     margin:
 	color:gray;
 	text-decoration: none;
-	color:rgba(128,128,128,.5);
+	color:rgba(128,128,128,.5); */
 }
