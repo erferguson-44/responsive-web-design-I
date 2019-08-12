@@ -65,20 +65,7 @@ h1, h2, h3, h4, h5 {
 }
 /****RESET ABOVE****/
 
-
-body{
-	/* max-width:1024px;
-    margin:40px 100px 40px 100px; */
-    border:1px solid red;
-}
-main{
-    /* max-width:100%; */
-    /* border:1px solid red; */
-}
-
 .navbar{
-    border:1px solid purple;
-    background:gold;
     width:100%;
 	margin-bottom:75px;
     display:flex;
@@ -86,7 +73,6 @@ main{
 }
 
 .navbar div{
-	/* border:1px solid black; */
 	width:100%;
 	display:flex;
 	justify-content: space-evenly;
@@ -95,73 +81,11 @@ main{
 }
 
 .navbar a{
-    /* border:1px solid red; */
 	text-decoration: none;
 	color:rgba(128,128,128,.5);
 }
 
-/****MEDIA @ 800px****/
-@media (max-width: 800px){
-    .navbar{
-	/* flex-wrap:wrap-reverse; */
-	flex-direction:column-reverse;
-	}
-    .navbar img{
-		border:1px solid black;
-		padding:5% 35%;
-    }
-    .action-container img{
-        display:none;
-    }
-}
-/****MEDIA @ 500px****/
-@media (max-width: 500px){
-    body{
-		background-color:pink;
-		max-width:100%;
-	}
-	.navbar div{
-	flex-direction:column;
-	}
-	.navbar div a{
-		width:90%;
-		padding:20px;
-		border-bottom:1px solid gray;
-		text-align:center;
-		font-size:18px;
-	}
-	.navbar img{
-		border-bottom:1px solid gray;
-	}
 
-	.section-top{
-		border:1px solid black;
-		/* display:flex;
-		justify-content: space-between; */
-		flex-direction:column;
-
-	}
-	.content-first{
-		border:1px solid purple;
-		width:100%;
-	}
-	.second-section{
-		border:1px solid purple;
-		/* display:flex; */
-		flex-direction:column;
-	}
-	.content-second{
-		max-width:100%;
-		/* margin:40px 0 40px 0; */
-	}
-	#copyright{
-		border:1px solid black;
-		text-align:center;
-		/* padding:100px; */
-	}
-	
-
-}
 
 /****ACTION CONTAINER****/
 .action-container{
@@ -234,3 +158,53 @@ button{
 	padding:80px;
 }
 
+/****MEDIA @ 800px****/
+@media (max-width: 800px){
+    .navbar{
+	flex-direction:column-reverse;
+	}
+    .navbar img{
+		padding:5% 35%;
+    }
+    .action-container img{
+        display:none;
+    }
+}
+/****MEDIA @ 500px****/
+@media (max-width: 500px){
+    body{
+		max-width:100%;
+	}
+	.navbar div{
+	flex-direction:column;
+	}
+	.navbar div a{
+		width:90%;
+		padding:20px;
+		border-bottom:1px solid gray;
+		text-align:center;
+		font-size:18px;
+	}
+	.navbar img{
+		border-bottom:1px solid gray;
+	}
+
+	.section-top{
+		flex-direction:column;
+
+	}
+	.content-first{
+		width:100%;
+	}
+	.second-section{
+		flex-direction:column;
+	}
+	.content-second{
+		max-width:100%;
+	}
+	#copyright{
+		text-align:center;
+	}
+	
+
+}
