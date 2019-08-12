@@ -104,15 +104,12 @@ main{
 /****MEDIA @ 800px****/
 @media (max-width: 800px){
     .navbar{
-    /* background-color:red; */
-    /*  */
-	/* align-items:center; */
-	flex-wrap:wrap-reverse;
+	/* flex-wrap:wrap-reverse; */
+	flex-direction:column-reverse;
 	}
-	
-    .nav-container img{
-        margin-left:40px;
-        max-width:35%;
+    .navbar img{
+		border:1px solid black;
+		padding:5% 35%;
     }
     .action-container img{
         display:none;
